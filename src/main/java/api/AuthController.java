@@ -38,7 +38,7 @@ public class AuthController {
 
         if(tokens == null) {
             return Response.status(Response.Status.UNAUTHORIZED)
-                    .entity(Map.of("error", "Invalid username or password"))
+                    .entity(Map.of("error", "Invalid username or password."))
                     .build();
         }
 
